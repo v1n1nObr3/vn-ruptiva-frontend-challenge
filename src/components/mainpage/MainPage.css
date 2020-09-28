@@ -1,0 +1,97 @@
+main {
+  min-width: 100vw;
+  max-width: fit-content;
+  min-height: 100vh;
+  max-height: fit-content;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #c8e1ff;
+}
+
+main > div {
+  width: 450px;
+  height: 300px;
+  border-radius: 10px;
+  padding: 5px 25px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 -1px 0px rgb(0, 0, 0, 0.02);
+
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+main > div > input {
+  width: 400px;
+  height: 50px;
+  border-bottom: 1px solid #d2c0c0;
+  padding: 10px;
+
+  font-size: 15pt;
+}
+
+main > div > input:focus {
+  border: 1px solid #000000;
+}
+
+main > div > button {
+  transition-duration: 1s;
+}
+
+main > div > button:first-of-type {
+  justify-self: flex-start;
+  width: 90px;
+  height: 35px;
+  color: #ffffff;
+  background-color: #7676df;
+}
+
+main > div > button:last-of-type {
+  justify-self: flex-end;
+  width: 180px;
+  height: 35px;
+  color: #ffffff;
+  background-color: #5a7b5d;
+}
+
+main > div > button:disabled {
+  background-color: #f2eff7;
+  color: #757575;
+}
+
+main > h5 {
+  top: 20px;
+  position: absolute;
+  padding: 5px;
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
+}
+
+main > h5.failure {
+  background-color: #ff5858;
+}
+
+main > h5.invalid {
+  background-color: #9a9a1f;
+}
+
+main > h5.already {
+  background-color: #e84d14;
+}
+
+main > h5.success {
+  background-color: #008000;
+}
+
+main > h5.loginfailure {
+  background-color: #ff5858;
+}
+
+main > h5.logininvalid {
+  background-color: #9a9a1f;
+}

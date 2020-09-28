@@ -1,0 +1,145 @@
+section#user-section {
+  min-width: 100vw;
+  max-width: fit-content;
+  min-height: 100vh;
+  max-height: fit-content;
+  background-color: #c8e1ff;
+
+  display: grid;
+  grid-template-rows: 90% 10%;
+}
+
+section#user-section > div {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 30% 28% 42%;
+  column-gap: 20px;
+}
+
+section#user-section > div > svg {
+  align-self: center;
+  justify-self: center;
+}
+
+section#user-section > div > div#repo-add {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #1f718b;
+  border-radius: 3px;
+  padding: 35px 15px 25px 10px;
+  background-color: #1f718b;
+  display: grid;
+  grid-template-rows: repeat(8, max-content);
+  row-gap: 20px;
+}
+
+section#user-section > div > div#repo-add > label {
+  position: relative;
+  height: fit-content;
+  top: 15px;
+  font-size: 10pt;
+  color: #ffffff;
+}
+
+section#user-section > div > div#repo-add > input {
+  height: 35px;
+  border: 1px solid #d2c0c0;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #ffffff;
+}
+
+section#user-section > div > div#repo-add > select {
+  width: 85px;
+  border: 1px solid #d2c0c0;
+  border-radius: 8px;
+}
+
+section#user-section > div > div#repo-add > textarea {
+  height: 75px;
+  border: 1px solid #d2c0c0;
+  border-radius: 8px;
+  padding: 5px;
+}
+
+section#user-section > div > div#repo-add > button {
+  width: 100px;
+  height: 30px;
+  background-color: #394a58;
+  border: 1px solid #b8cffd;
+  border-radius: 20px;
+  color: white;
+}
+
+section#user-section > div > div#repo-add > button:disabled {
+  background-color: #b8cffd;
+}
+
+section#user-section > div > div#repo-add > button:active {
+  position: relative;
+  top: 1px;
+}
+
+section#user-section > div > ul {
+  padding: 35px 15px;
+  list-style: none;
+  display: grid;
+  grid-auto-rows: max-content;
+  row-gap: 25px;
+  overflow-x: hidden;
+}
+
+section#user-section > div > ul > li {
+  height: fit-content;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  padding: 3px 5px;
+  background-image: linear-gradient(-9deg, #1f718b, #ffffff00);
+  cursor: default;
+  font-family: monospace;
+  color: #ffffff;
+  animation-name: translateMotion;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  display: grid;
+  grid-template-columns: max-content 1fr max-content;
+  column-gap: 15px;
+  align-items: center;
+}
+
+section#user-section > div > ul > li > svg {
+  width: 18px;
+  height: 18px;
+}
+
+section#user-section > div > ul > li > h1 {
+  overflow: hidden;
+}
+
+section#user-section > div > div#repo-listed {
+  width: 350px;
+  padding: 15px;
+  height: fit-content;
+  align-self: center;
+  justify-self: center;
+  overflow: hidden;
+  background-image: linear-gradient(-9deg, #1f718b, #ffffff00);
+  font-family: monospace;
+  display: grid;
+  grid-template-rows: max-content;
+  row-gap: 10px;
+}
+
+section#user-section > footer {
+  padding: 0px 25px;
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  column-gap: 15px;
+}
+
+section#user-section > footer > svg:active {
+  position: relative;
+  top: 1px;
+}
