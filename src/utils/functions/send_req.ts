@@ -1,6 +1,8 @@
 //---------------------------------------------------------------------------------------
 const sendRequest = async (path: string, payload: any) => {
   
+  console.log(process.env.REACT_APP_BACKEND!);
+  
   const url = process.env.REACT_APP_BACKEND! + path;
 
   const body = JSON.stringify(payload);
