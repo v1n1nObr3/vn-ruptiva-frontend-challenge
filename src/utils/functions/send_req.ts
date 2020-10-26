@@ -1,9 +1,7 @@
 //---------------------------------------------------------------------------------------
 const sendRequest = async (path: string, payload: any) => {
   
-  console.log(process.env.REACT_APP_BACKEND!);
-  
-  const url = process.env.REACT_APP_BACKEND! + path;
+  const url = (process.env.NODE_ENV === "development" ? "http://localhost:4000/" : "/api/") + path;
 
   const body = JSON.stringify(payload);
 
