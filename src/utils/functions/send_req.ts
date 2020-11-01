@@ -1,7 +1,7 @@
 //---------------------------------------------------------------------------------------
 const sendRequest = async (path: string, payload: any) => {
   
-  const url = (process.env.NODE_ENV === "development" ? "http://localhost:4000/" : "/api/") + path;
+  const url = "/api/" + path;
 
   const body = JSON.stringify(payload);
 
